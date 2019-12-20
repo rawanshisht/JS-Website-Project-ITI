@@ -1,5 +1,22 @@
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+// myUL
+var todo = document.getElementById("toDo");
+var article = document.getElementById("article")
+
+document.getElementById("todoDiv").style.display = "none"
+todo.addEventListener("click", function(){
+    console.log("clicked");
+    article.style.display="none";
+    document.getElementById("todoDiv").style.display = "block";
+})
+console.log(todo);
+
+
+
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementById("myUL");
+
+// var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -20,8 +37,13 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
+var list = document.querySelector("#myUL")
+console.log(list);
+
+// var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
+  console.log(ev.target);
+  
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
@@ -30,7 +52,10 @@ list.addEventListener('click', function(ev) {
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
+  li.setAttribute("id", "listElem");
+
   var inputValue = document.getElementById("myInput").value;
+  // window.localStorage = inputValue;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
@@ -53,3 +78,6 @@ function newElement() {
     }
   }
 }
+
+
+
