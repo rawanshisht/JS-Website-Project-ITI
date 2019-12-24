@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <html>
+
 <head>
     <title>Profile</title>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="profile.css" /> -->
     <style>
         #mainContainer :after {
             content: '';
             position: absolute;
-            background: url('./coco/default.jpg');
             opacity: 0.1;
             top: 0px;
             left: 0px;
@@ -14,162 +14,185 @@
             height: 100%;
             z-index: -1;
             background-size: cover;
-        }
-
-        #mainContainer {
-            position: relative;
+            background-image: url('./Resources/background3.jpg')
         }
 
         nav {
-            background-color: rgba(27, 27, 175, 0.5);
+            /* background-color: rgba(27, 27, 175, 0.5); */
             text-align: center;
+            /* padding-top: 30px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
             z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
 
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
 
         li {
             display: inline-block;
             margin: 0px 20px;
             list-style: none;
+            text-decoration: none;
+
             z-index: 2;
 
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
         }
 
         li:hover {
             font-weight: bold;
             cursor: pointer;
-            z-index: 2;
-
-        }
-
-        header {
-            font-size: 35px;
-            text-align: center;
-            margin-bottom: 10px;
-            font-family: 'Franklin Gothic Medium';
-            z-index: 2;
-
-        }
-
-        section {
-            float: left;
-            width: 60%;
-            border: 1px solid black;
-            margin: 20px;
-            padding: 20px;
-            background-color: antiquewhite;
-        }
-
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        aside {
-            float: left;
-            width: 30%;
-        }
-
-        aside>ul {
-            float: left;
-            width: 30%;
-            border: 1px solid black;
-            padding: 20px;
-            margin: 20px;
-            text-align: center;
-        }
-
-        aside>ul>li {
-            margin: 20px;
-            padding: 20px;
-        }
-
-        img:hover {
-            transform: scale(2);
-            transition: 2s;
-        }
-
-        aside>ul>li:hover {
-            cursor: pointer;
-            font-weight: bold;
             color: blue;
 
+            z-index: 2;
+
         }
 
-        aside ul li {
-            background-color: lightcoral;
-            color: white;
+        #listItems {
+            float: left;
+            width: 30%;
+            position: absolute;
+            top: 200px;
         }
 
-        footer {
-            clear: both;
+        #listItems>ul {
+            float: left;
+            width: 30%;
+            height: 50%;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
             text-align: center;
+        }
+
+        #listItems>ul>li {
             margin: 20px;
             padding: 20px;
+        }
+
+        #profile {
+            /* width: 30%; */
+            position: absolute;
+            top: 200px;
+            left: 30%;
+        }
+
+        #profile>ul {
+            width: 30%;
+            height: 50%;
+            /* border: 1px solid black; */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        #article{
+            position: absolute;
+            top: 350px;
+            left: 300px;
+            /* border: 1px solid black; */
+            /* height: 800px; */
+
+
         }
     </style>
 </head>
 
 <body>
     <div id="mainContainer">
-        <div id="background">
 
+        <nav>
 
-            <header>
-                Welcome to our track!
-            </header>
-            <nav>
+            <ul>
+
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Contact Us</a>
+                </li>
+                <!-- <li>
+                            <a href="register.html">Register</a>
+                        </li> -->
+            </ul>
+        </nav>
+        <div id="container">
+
+            <div id="listItems">
                 <ul>
-                        <a href="index.html" link="black" visted="black"><li>Home</li></a>
-                        <a href="profile.html"><li>Profile</li></a>
-                        <a href="login.html"><li>Login</li></a>
-                        <a href="register.html"><li>Register</li></a>
-                        <li>About</li>
+                    <li>
+                        <a id="toDo" href="#todoDiv">To-do List</a>
+                    </li>
+                    <li>Courses</li>
+                    <li>Games</li>
                 </ul>
-            </nav>
+            </div>
+            <section>
+                <!-- <img src= gender +".jpg"> -->
+                <div id="profile">
 
-            <div id="container">
-        
-                    <aside>
-                            <ul>
-                                <li>To-do List</li>
-                                <li>Courses</li>
-                                <li>Games</li>
-                            </ul>
-                        </aside>
-                <section>
-                     <!-- <section> -->
-                    <img src="./Resources/female.jpg">
-
-                    <ul>
+                    <ul "profileData">
                         <li>Name</li>
                         <li>Birthday</li>
                         <li>Location</li>
                     </ul>
-                <!-- </section> -->
-                    <!-- <article>
+                </div>
+                <p id="article">
+                    Hello! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the
+                    courses link to study or you can have a break and play a game.
+                </p>
+                <div id="todoDiv">
 
-                        A Document Type Declaration, or DOCTYPE for short, is an instruction to the web browser about the version of markup language
-                        in which a web page is written. The doctype declaration itself is not an HTML tag. In HTML 4.01,
-                        the
-                        <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for
-                        the markup language, so that the browsers render the content correctly. HTML5 is required.: Always
-                        add the
-                        <!DOCTYPE> declaration to your HTML documents, so that the browser knows what type of document to expect.
-                    </article> -->
-                </section>
-          
-                   
-                
-            </div>
-            <footer>
-                Rawan El-Shishtawy &copy; 2019 - ITI intake 40
-            </footer>
+                    <div id="myDIV" class="header">
+                        <input type="text" id="myInput" placeholder="Add Task...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
+
+                    <ul id="myUL">
+
+                    </ul>
+
+                </div>
+
+
+
+            </section>
+
+
+
         </div>
     </div>
+
+    <script src="todolist.js"></script>
+    <script>
+
+
+    </script>
 </body>
 
 </html>

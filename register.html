@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 
 <head>
+<<<<<<< HEAD
     <title>Register</title>
     <style>
         table,
@@ -46,104 +47,101 @@
             width: 100%;
         }
     </style>
+=======
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="register.css" />
+
+>>>>>>> 206a48959c3a9a6826688afc18dc1f519bc74f77
 </head>
 
 <body>
-    <div>
+        <nav>
+                <ul>
+                    <a href="index.html" link="black" visted="black"><li>Home</li></a>
+                    <a href="profile.html"><li>Profile</li></a>
+                    <a href="register.html"><li>Register</li></a>
+                </ul>
+            </nav>
+            
+    </hr>
+    <div id="container">
+        <form action="profile.html" target="_blank" method="get">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
 
-        <table id="container" align="center">
-            <tr>
-                <td>
-                    <label>
-                        First Name
-                    </label>
-                </td>
-                <td id="text">
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>
-                        Last Name
-                    </label>
-                </td>
-                <td id="text">
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td id="text">
-                    <label>
-                        Email
-                    </label>
-                </td>
-                <td>
-                    <input type="email">
-                </td>
-            </tr>
+                            <label>Name</label>
+                        </td>
+                        <td>
 
-            <tr>
-                <td id="text">
-                    <label>
-                        Password
-                    </label>
-                </td>
-                <td>
-                    <input type="password">
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="2">
-                    <label>
-                        Gender
-                    </label>
-                </td>
-                <td>
-                    <input type="radio" name="gender" value="male"> Male
-                    <br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="gender" value="female"> Female
-                    <br>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Image
-                </td>
-                <td>
-                    <input type="file" name="fileupload" value="fileupload" id="fileupload">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Birthday
-                </td>
-                <td id="daymonth">
-                    <input type="date">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Location
-                </td>
-                <td id="location">
-                    <input type="text">
-                    <input type="button" value="Get Location">
-                </td>
-            </tr>
+                            <input name="name" type="text">
+                        </br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <label>Age</label>
+                        </td>
+                        <td>
+
+                            <input name="age" type="text">
+                        </br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <label>
+                                Gender
+                            </label>
+                        </td>
+                        <td>
+
+                                <input type="radio" name="gender" value="male"> Male
+                        </br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <input type="radio" name="gender" value="female"> Female
+                                <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Birthday
+
+                            </label>
+                        </td>
+                        <td id="daymonth">
+                            <input  type="date">
+                        </br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="center" colspan="2">
+
+                            <input  type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
 
-            <tr>
-                <td id="center" colspan="2">
-                    <input type="button" value="Submit">
-                </td>
-            </tr>
-        </table>
+
+
+
+        </form>
     </div>
+
+    <script src="main-cookies.js">
+
+    </script>
 </body>
 
 </html>
