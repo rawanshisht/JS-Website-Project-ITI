@@ -1,119 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <!-- Problems -->
+<!-- Problems -->
 <!-- Opacity not changed
 aside not aligned -->
+
 <head>
     <title>Main Page</title>
-    <style>
-        #mainContainer :after {
-            content: '';
-            position: absolute;
-            background: url('./coco/default.jpg');
-            opacity: 0.1;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-        }
-
-        #mainContainer {
-            position: relative;
-        }
-
-        nav {
-            background-color: rgba(27, 27, 175, 0.5);
-            text-align: center;
-            z-index: 2;
-
-        }
-
-        li {
-            display: inline-block;
-            margin: 0px 20px;
-            list-style: none;
-            z-index: 2;
-
-        }
-
-        li:hover {
-            font-weight: bold;
-            cursor: pointer;
-            z-index: 2;
-
-        }
-
-        header {
-            font-size: 35px;
-            text-align: center;
-            margin-bottom: 10px;
-            font-family: 'Franklin Gothic Medium';
-            z-index: 2;
-
-        }
-
-        section {
-            float: left;
-            width: 60%;
-            border: 1px solid black;
-            margin: 20px;
-            padding: 20px;
-            background-color: antiquewhite;
-        }
-
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        aside {
-            float: right;
-            width: 30%;
-        }
-
-        aside>ul {
-            float: right;
-            width: 30%;
-            border: 1px solid black;
-            padding: 20px;
-            margin: 20px;
-            text-align: center;
-        }
-
-        aside>ul>li {
-            margin: 20px;
-            padding: 20px;
-        }
-
-        img:hover {
-            transform: scale(2);
-            transition: 2s;
-        }
-
-        aside>ul>li:hover {
-            cursor: pointer;
-            font-weight: bold;
-            color: blue;
-
-        }
-
-        aside ul li {
-            background-color: lightcoral;
-            color: white;
-        }
-
-        footer {
-            clear: both;
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
 
 <body>
@@ -122,36 +15,62 @@ aside not aligned -->
 
 
             <header>
-                Welcome to our website!
+                Subero
             </header>
             <nav>
+
                 <ul>
-                    <a href="index.html" link="black" visted="black"><li>Home</li></a>
-                    <a href="profile.html"><li>Profile</li></a>
-                    <a href="login.html"><li>Login</li></a>
-                    <a href="register.html"><li>Register</li></a>
-                    <li>About</li>
+
+                    <li>
+                        <a href='#header'>Home</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                            <a>Contact Us</a>
+                        </li>
+                    <!-- <li>
+                        <a href="register.html">Register</a>
+                    </li> -->
                 </ul>
             </nav>
+            <input id="registerBtn" type="button" value="Register">
 
             <div id="container">
 
-                <section>
+                <h1>
+                    Get The Best Guide For Your Journey In ITI!!
+                </h1>
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla
+                        dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+                </p>
+                <!-- <section>
                     <article>
                         A Document Type Declaration, or DOCTYPE for short, is an instruction to the web browser about the version of markup language
                         in which a web page is written. The doctype declaration itself is not an HTML tag. In HTML 4.01,
                         the
                         <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for
-                        the markup language, so that the browsers render the content correctly. HTML5 is required.: Always add the
+                        the markup language, so that the browsers render the content correctly. HTML5 is required.: Always
+                        add the
                         <!DOCTYPE> declaration to your HTML documents, so that the browser knows what type of document to expect.
                     </article>
-                </section>
+                </section> -->
             </div>
             <footer>
                 Ekram Mohamed & Rawan El-Shishtawy &copy; 2019 - ITI intake 40
             </footer>
         </div>
     </div>
+    <script>
+        document.getElementById("registerBtn").addEventListener("click", function () {
+            window.open("register.html")
+        })
+    </script>
 </body>
 
 </html>

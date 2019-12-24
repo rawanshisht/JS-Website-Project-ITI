@@ -2,68 +2,190 @@
 
 <head>
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="profile.css" />
-    
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="profile.css" /> -->
+    <style>
+        #mainContainer :after {
+            content: '';
+            position: absolute;
+            opacity: 0.1;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-image: url('./Resources/background3.jpg')
+        }
+
+        nav {
+            /* background-color: rgba(27, 27, 175, 0.5); */
+            text-align: center;
+            /* padding-top: 30px; */
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0px;
+            margin: 0px;
+            z-index: 2;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            box-shadow: 10px 10px 13px #888888;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0px 20px;
+            list-style: none;
+            text-decoration: none;
+
+            z-index: 2;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        li:hover {
+            font-weight: bold;
+            cursor: pointer;
+            color: blue;
+
+            z-index: 2;
+
+        }
+
+        #listItems {
+            float: left;
+            width: 30%;
+            position: absolute;
+            top: 200px;
+        }
+
+        #listItems>ul {
+            float: left;
+            width: 30%;
+            height: 50%;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #listItems>ul>li {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #profile {
+            /* width: 30%; */
+            position: absolute;
+            top: 200px;
+            left: 30%;
+        }
+
+        #profile>ul {
+            width: 30%;
+            height: 50%;
+            /* border: 1px solid black; */
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        #article{
+            position: absolute;
+            top: 350px;
+            left: 300px;
+            /* border: 1px solid black; */
+            /* height: 800px; */
+
+
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <a href="index.html" link="black" visted="black">
-                <li>Home</li>
-            </a>
-            <a href="profile.html">
-                <li>Profile</li>
-            </a>
-            <a href="register.html">
-                <li>Register</li>
-            </a>
-        </ul>
-    </nav>
-    <div id="container">
+    <div id="mainContainer">
 
-        <aside>
+        <nav>
+
             <ul>
-                <a id="toDo" href="#todoDiv">
-                    <li>To-do List</li>
-                </a>
-                <li>Courses</li>
-                <li>Games</li>
-            </ul>
-        </aside>
-        <section>
-            <!-- <img src= gender +".jpg"> -->
-            <div id="profile">
 
-                <ul "profileData">
-                    <li>Name</li>
-                    <li>Birthday</li>
-                    <li>Location</li>
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Contact Us</a>
+                </li>
+                <!-- <li>
+                            <a href="register.html">Register</a>
+                        </li> -->
+            </ul>
+        </nav>
+        <div id="container">
+
+            <div id="listItems">
+                <ul>
+                    <li>
+                        <a id="toDo" href="#todoDiv">To-do List</a>
+                    </li>
+                    <li>Courses</li>
+                    <li>Games</li>
                 </ul>
             </div>
-            <article id="article">
-                Hello! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the
-                courses link to study or you can have a break and play a game.
-            </article>
-            <div id="todoDiv">
+            <section>
+                <!-- <img src= gender +".jpg"> -->
+                <div id="profile">
 
-                <div id="myDIV" class="header">
-                    <input type="text" id="myInput" placeholder="Add Task...">
-                    <span onclick="newElement()" class="addBtn">Add</span>
+                    <ul "profileData">
+                        <li>Name</li>
+                        <li>Birthday</li>
+                        <li>Location</li>
+                    </ul>
+                </div>
+                <p id="article">
+                    Hello! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the
+                    courses link to study or you can have a break and play a game.
+                </p>
+                <div id="todoDiv">
+
+                    <div id="myDIV" class="header">
+                        <input type="text" id="myInput" placeholder="Add Task...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                    </div>
+
+                    <ul id="myUL">
+
+                    </ul>
+
                 </div>
 
-                <ul id="myUL">
-
-                </ul>
-
-            </div>
-         
 
 
-        </section>
+            </section>
 
 
 
+        </div>
     </div>
 
     <script src="todolist.js"></script>
