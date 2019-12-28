@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="profile.css" /> -->
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="12.mp4" type="video/mp4">        
+    </video>
+    <center>
+        <section id="mainContainer">
+            <a id="homeTab">Home</a>
+            <a id="profileTab">Profile</a>
+            <a id="aboutTab">About</a>
+            <a id="contasctTab">Contact Us</a>
+        </section>
+    </center>
+
+    <section class="itemContainer" id="container">
+        <div id="toDo"><a href="#">ToDo List</a></div>
+        <div id="courseItem"><button class="dropbtn">Courses 
+         
+            <div id="CourseContainer" style="display: block;" click="show_hide">
+                <div id="courseclass">
+                    <a href="">Node JS</a>
+                    <a href="">Python</a>
+                    <a href="">JavaScript</lai>
+                </div>
+            </div>
+        </div>
+        <div id="gamesItem"><a href="#">Game</a></div>
+    </section>
+
+    <div class="card">
+        <img src="p1.jpg" alt="Profile" style="width:100%">
+        <h1>MyName</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <p><button>Contact</button></p>
+        </div>
+
+
+        <div id="artical">
+            <p id="article">
+                Hello! We are here to help you organize your life. By our user-friendly to-do list, you will track your progress. Open the courses link to study or you can have a break and play a game.
+            </p>
+        </div>
+
+        <div id="todoDiv">
+            <div id="myDIV" class="header">
+                <input type="text" id="myInput" placeholder="Add Task...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+            <ul id="myUL">
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="todolist.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

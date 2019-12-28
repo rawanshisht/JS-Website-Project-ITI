@@ -1,0 +1,216 @@
+body {
+    background-image: url('background3.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+#mainContainer a {
+    padding: 12px;
+    color: white;
+}
+
+#mainContainer a:hover {
+    background-color: khaki;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:500px) {
+    #mainContainer a {
+        float: none;
+        display: block;
+    }
+}
+
+#mainContainer {
+    box-shadow: 10px 10px 13px #888888;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 10%;
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.3;
+}
+
+li :hover {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    /* z-index: 2; */
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    /* border: 2px chartreuse solid; */
+}
+
+.itemContainer div:hover {
+    left: 0;
+}
+
+#toDo {
+    top: 20px;
+    background-color: teal;
+}
+
+#courseItem {
+    top: 80px;
+    background-color: thistle;
+}
+
+#gamesItem {
+    top: 140px;
+    background-color: violet;
+}
+
+.itemContainer {
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    margin: 0px;
+    padding: 0px;
+    left: 0%;
+    display: inline-block;
+    text-size-adjust: inherit;
+    font-size: 20px;
+}
+
+.itemContainer div {
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* btn css */
+
+#courseItem .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+#courseItem :hover {
+    cursor: pointer;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* #courseclass {
+    float: none;
+    color: black;
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    left: 100px;
+    transition: 0.3s;
+} */
+
+#courseclass {
+    display: block;
+    width: 90px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 00px;
+}
+
+#profile {
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 90%;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul#profileData {
+    padding: 0px;
+    margin: 0px;
+}
+
+#artical {
+    position: absolute;
+    left: 150px;
+    width: 400px;
+    font-size: 25px;
+    top: 20px;
+}
+
+
+/* Profile*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: 20px;
+    border: 2px yellow solid;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
